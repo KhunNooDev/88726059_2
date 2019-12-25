@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
-    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <style>
     body {
         font-family: 'Alegreya';
-        font-size: 16px;
+        font-size: 20px;
         background-color: #000000;
         color: #FFFFFF;
     }
@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <h1>New Emp [<a href="newemp.html">+</a>]</h1>
+    <center>
+    <h1>New Emp [<a style="color: red;" href="newemp.html">+</a>]</h1>
    
     <?php
     // connect database 
@@ -76,5 +77,6 @@
             echo $html;
     }
     ?>
+    </center>
 </body>
 </html>
