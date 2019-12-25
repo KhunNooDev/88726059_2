@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+        <style>
+            body {
+                font-family: 'Alegreya';
+                font-size: 16px;
+                background-color: #000000;
+                color: #FFFFFF;
+            }
+            </style>
+    </head>
+    <body>
+        <h3>New Emp</h3>
+            <form action="save.php" method="post">
+                Emp no : <input type="text" name="empno" maxlength="5">
+                <br />
+                Name : 
+                <select name="emp_prefix">
+                    <option value="นาย">นาย</option>
+                    <option value="นางสาว">นางสาว</option>
+                    <option value="นาง">นาง</option>
+                </select>
+                <input type="text" name="emp_name" maxlength="50">
+                <br />
+                Gender :
+                <input type="radio" name="emp_gender" value="M" checked> Male
+                <input type="radio" name="emp_gender" value="F"> Female
+                <br />
+                Birthday : <input type="date" name="emp_birthdate">
+                <br />
+                Email : <input type="email" name="emp_email" maxlength="50">
+                <br />
+                Salary : <input type="text" name="emp_salary" maxlength="7">
+                <br />
+                Password : <input type="password" name="emp_passwd">
+                
+                <p><input type="submit" value="Submit"></p>
+            </form>
+    </body>
+</html>
